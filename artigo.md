@@ -70,34 +70,21 @@ input {
 input[type="submit"] {
   width: auto;
   color: white;
-  margin-left: auto;
   background-color: #bd24bd;
+  margin: 15px 9px 0 auto;
+  padding: 5px 15px;
 }
 label {
   display: block;
-  margin-bottom: 5px;
+  margin: 15px 0 5px 0;
 }
 ```
 
 e finalmente o resultado final é esse aqui:
 
-<form name="userInfo_form" onsubmit="sendForm();" >
-  <h1>Cadastre seus dados</h1>
-
-<label for="nome">Nome\*: </label>
-<input type="text" name="nome" id="nome" placeholder="Beatriz Miranda" required />
-
-<label for="idade">Idade: </label>
-<input type="number" id="idade" placeholder="20" name="idade" min="0" />
-
-<label for="email">E-mail\*: </label>
-<input type="email" id="email" placeholder="seu_email@mail.com" name="email" required />
-
-<label for="phone">Telefone: </label>
-<input type="tel" id="phone" placeholder="(xx)xxxxx-xxxx" name="phone" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" />
-
-  <input type="submit" class="enviar" value="Enviar" />
-</form>
+<div  class="centerImg">
+<img src="./img/formFinished.png" style="margin-bottom: 10px"/>
+</div>
 
 <hr style="margin-top: 50px"/>
 
@@ -169,38 +156,23 @@ Com a entrada do `HTML5` os formulários se tornaram muito mais simples de serem
 Lembrando que no quesito de segurança, obtenção, armazenamento e envio desses dados sejam necessários outras linguagens como `javascript`, `PHP` e provavelmente um banco de dados.
 
 <style>
-  form {
-    color: #333;
-    display: flex;
-    padding: 20px;
-    max-width: 350px;
-    margin: 20px auto;
-    border-radius: 5px;
-    background: #f3f3f3;
-    flex-direction: column;
-  }
-  input {
-    width: 95%;
-    height: 30px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px #969296;
-  }
-  input[type="submit"] {
-    width: auto;
-    color: white;
-    margin-left: auto;
-    background-color: #bd24bd;
-  }
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
   .centerImg {
     display: flex; 
     justify-content: center;
     margin: 40px 0;
-    flex-wrap: wrap;
+  }
+  footer{ 
+    background: #cecece;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: right;
   }
 </style>
+
+<br/>
+<br/>
+<br/>
+<footer style="margin-top: auto">
+  Beatriz Miranda - BP3001679
+</footer>
