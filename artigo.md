@@ -40,7 +40,7 @@ O resultado será algo parecido com isso:
 
 ## CSS3
 
-Mas para que seu formulário seja bem estilizado podemos utilizar [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/). E para isso precisamos de um arquivo css externo e importá-lo no começo de seu html com a tag abaixo, lembre-se de referencar o caminho adequado para o arquivo.
+Mas para que seu formulário seja bem estilizado podemos utilizar [CSS3](https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/). E para isso precisamos de um arquivo css externo e importá-lo no começo de seu `HTML` com a `tag` abaixo, lembre-se de referenciar o caminho adequado para o arquivo.
 
 ```html
 <link rel="stylesheet" href="./css/styles.css" />
@@ -106,7 +106,7 @@ O próximo input utilizado foi o de tipo `number` ele apenas recebe valores num�
 <input type="number" name="idade" min="0" max="100" />
 ```
 
-Utilizado também o input do tipo `email` que faz algumas validações simples para permitir que esse campo possa ser enviado, como a existência de um `@` e conteúdo antes e depois desse caracter.
+Utilizado também o input do tipo `email` que faz algumas validações simples para permitir que esse campo possa ser enviado, como a existência de um `@` e conteúdo antes e depois desse caractere.
 
 ```html
 <input type="email" />
@@ -126,7 +126,7 @@ E utilizamos o input do tipo `tel` que semanticamente informa que esse input rec
 <input type="tel" pattern="\([0-9]{2}\)[0-9]{5}-[0-9]{4}" />
 ```
 
-### Patter
+### Pattern
 
 Rapidamente explicando o pattern utiliza [Regex](https://regexr.com/).
 E no padrão do input acima verifica se o valor do input começa com um `(` se possui dois números entre 0 e 9 seguido por um `)`
@@ -141,7 +141,7 @@ e então se ele possui mais 5 digitos de 0 a 9 seguido por um `-` e mais 4 digit
 [0-9]{5}-[0-9]{4}
 ```
 
-E por fim utilizamos o `input` que deve ser sempre encontrado nos formulários, o de tipo `submit` que tem um formato de botão e quando clicado triga um onSubmit do tag `form`. Ou seja no exemplo abaixo quando o input de `submit` for precionado e todos os campos do formulários estiverem corretamente preenchidos a função `sendForm()` será executada.
+E por fim utilizamos o `input` que deve ser sempre encontrado nos formulários, o de tipo `submit` que tem um formato de botão e quando clicado triga um onSubmit do tag `form`. Ou seja no exemplo abaixo quando o input de `submit` for pressionado e todos os campos do formulários estiverem corretamente preenchidos a função `sendForm()` será executada.
 
 ```html
 <form name="userInfo_form" onsubmit="sendForm()">
