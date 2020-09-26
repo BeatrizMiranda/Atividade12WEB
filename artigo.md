@@ -174,5 +174,5 @@ Lembrando que no quesito de segurança, obtenção, armazenamento e envio desses
 <br/>
 <br/>
 <footer style="margin-top: auto">
-  Beatriz Miranda - BP3001679
+  Beatriz Miranda - BP3001679 - 25 de set. de 2020
 </footer>
